@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+outline: none;
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+html {
+height: 101%;
+}
+body {
+background: #e4e4e4 url('images/binding_light.png'); /* http://subtlepatterns.com/binding-light/ */
+font-size: 62.5%;
+line-height: 1;
+padding-bottom: 65px;
+padding-top: 35px;
+}
+::selection {
+background: #d0ccf1;
+}
+::-moz-selection {
+background: #d0ccf1;
+}
+::-webkit-selection {
+background: #d0ccf1;
+}
+br {
+display: block;
+line-height: 2.2em;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+display: block;
+}
+ol, ul {
+list-style: none;
+}
+input, textarea {
+-webkit-font-smoothing: antialiased;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+outline: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+content: '';
+content: none;
+}
+strong {
+font-weight: bold;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+img {
+border: 0;
+max-width: 100%;
+}
+h1 {
+position: relative;
+font-family: 'Lato', Helvetica, Arial, sans-serif;
+font-size: 3.65em;
+line-height: 2.0em;
+padding: .2em 0;
+font-weight: bold;
+color: #5d6c81;
+margin-bottom: 10px;
+overflow: hidden;
+white-space: nowrap;
+text-align: center;
+text-overflow: ellipsis;
+}
+h1:before, h1:after {
+content: "";
+position: relative;
+display: inline-block;
+width: 50%;
+height: 2px;
+vertical-align: middle;
+background: #5d6c81;
+}
+h1:before {
+left: -.5em;
+margin: 0 0 0 -50%;
+}
+h1:after {
+left: .5em;
+margin: 0 -50% 0 0;
+}
+h1 > span {
+display: inline-block;
+vertical-align: middle;
+white-space: normal;
+}
+h2 {
+font-family: Geneva, Tahoma, Verdana, sans-serif;
+font-size: 3.1em;
+line-height: 1.7em;
+font-weight: normal;
+font-style: italic;
+color: #777;
+margin-bottom: 5px;
+}
+p, span {
+font-family: 'Lato', Helvetica, Arial, sans-serif;
+color: #424242;
+}
+p {
+font-size: 1.7em;
+line-height: 1.4em;
+}
+a {
+text-decoration: none;
+color: #577ccf;
+}
+a:hover {
+text-decoration: underline;
+}
+/** layout contents **/
+#w {
+display: block;
+width: 800px;
+margin: 0 auto;
+padding: 13px 22px;
+background: #fff;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+/** images **/
+.imgbox {
+display: block;
+width: 100%;
+text-align: center;
+margin-bottom: 40px;
+}
+.imgbox img {
+-webkit-box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.65);
+-moz-box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.65);
+box-shadow: 1px 4px 9px -1px rgba(0,0,0,0.65);
+}
+.credits {
+text-align: center;
+margin-bottom: 20px;
+}
+.magnify {
+width: 600px;
+margin: 50px auto;
+position: relative;
+cursor: none;
+}
+/* Let's create the magnifying glass */
+.large {
+display: none;
+width: 175px;
+height: 175px;
+position: absolute;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+border-radius: 100%;
+/* box shadows to achieve the glass effect */
+-webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+-moz-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25)
+}
+/* To solve overlap bug at the edges during magnification */
+.thumb {
+display: block;
+}
